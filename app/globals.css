@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  width: 100vw;
+  background-color: #090e12;
+  color: white;
+}
+
+html{
+  width: 100vw !important;
+}
+
+section{
+  padding-inline: 16px;
+}
+
+.title-span{  
+  background:  #FB1F65;
+  background-clip: unset;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.main-btn{
+  padding: 8px 42px;
+  border-radius: 7px;
+  position: relative; 
+  border: none;
+  background-color: #090e12;
+}
+
+.main-btn::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, red, deeppink, blue);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(8px);
+  background-size: 300%;  
+}
+
+.main-btn:hover::after{
+  animation: btn-border 7s linear infinite;
+}
+
+@keyframes btn-border {
+  0%{
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+
+
+
+.hero{
+  padding-top: 76px;
+}
+
+@media (min-width: 710px){
+  section{
+    padding-inline: 48px;
+  }
+  .hero{
+    padding-top: 64px;
+  }
+}
+
+@media (min-width: 1020px){
+  section{
+    padding-inline: 122px;
+  }
+  .hero{
+    padding-top: 124px;
+  }
+}
+
+@media (min-width: 1420px){
+  section{
+    padding-inline: 244px;
+  }
+  .hero{
+    padding-top: 268px;
+  }
+}
