@@ -5,9 +5,7 @@ import {RiContactsLine} from 'react-icons/ri'
 import {BsFillSendExclamationFill} from 'react-icons/bs'
 import {GiStrong} from 'react-icons/gi'
 import Link from 'next/link'
-import { useDispatch, useSelector } from 'react-redux'
-import { guardarNombre } from '@/store/slice'
-import { useRouter } from 'next/navigation'
+
 
 export default function NavBar() {
     const [activeSection, setActiveSection] = useState(2)
@@ -16,18 +14,20 @@ export default function NavBar() {
         setActiveSection(section)
     }
 
-    const active = 'w-[36%] flex items-center text-black font-bold gap-2 bg-pink-400 md:bg-transparent md:text-white justify-center py-4 px-2 rounded-[32px] md:w-auto transition-all duration-700 ease-in-out z-50'
+    const active = 'w-[36%] flex md:block items-center text-black font-bold gap-2 md:gap-0 bg-pink-400 md:bg-transparent md:text-white justify-center py-4 px-2 rounded-[32px] md:w-auto transition-all duration-700 ease-in-out z-50 md:transition-none md:border-b-4 md:border-pink-400 md:rounded-none'
 
-    const inactive = 'w-[16%] flex justify-center md:w-auto bg-transparent'
+    const inactive = 'w-[16%] md:w-auto flex justify-center md:w-auto bg-transparent cursor-pointer'
 
   return (
-    <header className='w-full bg-black/50 md:bg-white/5 fixed bottom-0 left-0 px-7 rounded-xl py-4 md:w-20 md:rounded-full md:gap-5 md:top-1/2 md:-translate-y-1/2  md:left-[96%] md:-translate-x-1/2 md:h-80 lg:h-[520px] md:py-12 z-50'>
+    <header className='w-full bg-black/50 md:bg-white/10 fixed bottom-0 left-0 px-7 rounded-xl py-4 md:w-20 md:rounded-full md:gap-5 md:top-1/2 md:-translate-y-1/2  md:left-auto md:right-4 md:h-80 lg:h-[520px] md:py-12 z-50'>
         <nav className='flex md:h-full items-center justify-between flex-row md:flex-col h-20 z-50'>
             
-            <div onClick={()=> setActive(0)} className={ activeSection === 0 ? active : inactive }>
-                <BiSolidFolderOpen size={31}></BiSolidFolderOpen>
-                <p className={activeSection === 0 ? 'text-xl md:hidden' : 'hidden'}>Work</p>
-            </div>
+            <Link href={'/portfolio'} className='z-50'>
+                <div onClick={()=> setActive(0)} className={ activeSection === 0 ? active : inactive }>
+                    <BiSolidFolderOpen size={31}></BiSolidFolderOpen>
+                    <p className={activeSection === 0 ? 'text-xl md:hidden' : 'hidden'}>Work</p>
+                </div>
+            </Link>
             
             <div onClick={()=> setActive(1)} className={ activeSection === 1 ? active : inactive }>
                 <BsFillSendExclamationFill size={31}></BsFillSendExclamationFill>

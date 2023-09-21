@@ -93,3 +93,23 @@ section{
     padding-top: 268px;
   }
 }
+
+
+/* swiper styles */
+
+.swiper-pagination-bullet {
+  width: 10px !important; /* Ancho personalizado para cada punto */
+  height: 10px !important; /* Altura personalizada para cada punto */
+  background-color: white !important; /* Color de fondo personalizado */    
+  /* Espaciado entre puntos */
+  border-radius: 50% !important; /* Hace que los puntos sean circulares */
+  opacity: 0.8 !important; /* Opacidad personalizada */
+  transition: opacity 0.3s ease !important; /* Transición de opacidad al pasar el mouse */
+}
+
+/* Estilo para el punto activo (el punto de la diapositiva actual) */
+.swiper-pagination-bullet-active {
+  opacity: 1 !important; 
+  background-color: #FB1F65 !important;  
+  /* Cambia la opacidad del punto activo */
+}
