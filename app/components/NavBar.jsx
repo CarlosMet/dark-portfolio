@@ -22,32 +22,32 @@ export default function NavBar() {
     <header className='w-full bg-black/50 md:bg-white/10 fixed bottom-0 left-0 px-7 rounded-xl py-4 md:w-20 md:rounded-full md:gap-5 md:top-1/2 md:-translate-y-1/2  md:left-auto md:right-4 md:h-80 lg:h-[520px] md:py-12 z-50'>
         <nav className='flex md:h-full items-center justify-between flex-row md:flex-col h-20 z-50'>
             
-            <Link href={'/portfolio'} className='z-50'>
-                <div onClick={()=> setActive(0)} className={ activeSection === 0 ? active : inactive }>
-                    <BiSolidFolderOpen size={31}></BiSolidFolderOpen>
-                    <p className={activeSection === 0 ? 'text-xl md:hidden' : 'hidden'}>Work</p>
-                </div>
-            </Link>
             
-            <div onClick={()=> setActive(1)} className={ activeSection === 1 ? active : inactive }>
+            <Link href={'/portfolio'} onClick={()=> setActive(0)} className={ activeSection === 0 ? active : inactive }>
+                <BiSolidFolderOpen size={31}></BiSolidFolderOpen>
+                <p className={activeSection === 0 ? 'text-xl md:hidden' : 'hidden'}>Work</p>
+            </Link>
+           
+            
+            <Link href={'/contact'} onClick={()=> setActive(1)} className={ activeSection === 1 ? active : inactive }>
                 <BsFillSendExclamationFill size={31}></BsFillSendExclamationFill>
                 <p className={activeSection === 1 ? 'text-xl md:hidden' : 'hidden'}>Contact</p>
-            </div>
+            </Link>
 
-            <div onClick={()=> setActive(2)} className={ activeSection === 2 ? active : inactive }>
+            <Link href={'/'} onClick={()=> setActive(2)} className={ activeSection === 2 ? active : inactive }>
                 <BiHomeAlt2 size={31}></BiHomeAlt2>
                 <p className={activeSection === 2 ? 'text-xl md:hidden' : 'hidden'}>Home</p>
-            </div>
+            </Link>
 
-            <div onClick={()=> setActive(3)} className={ activeSection === 3 ? active : inactive }>
+            <Link href={'/skills'} onClick={()=> setActive(3)} className={ activeSection === 3 ? active : inactive }>
                 <GiStrong size={31}></GiStrong>
                 <p className={activeSection === 3 ? 'text-xl md:hidden' : 'hidden'}>Skills</p>
-            </div>
+            </Link>
 
-            <div onClick={()=> setActive(4)} className={ activeSection === 4 ? active : inactive }>
+            <Link href={'/about'} onClick={()=> setActive(4)} className={ activeSection === 4 ? active : inactive }>
                 <RiContactsLine size={31}></RiContactsLine>
                 <p className={activeSection === 4 ? 'text-xl md:hidden' : 'hidden'}>About</p>
-            </div>
+            </Link>
 
         </nav>
     </header>
