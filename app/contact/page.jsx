@@ -13,26 +13,26 @@ export default function Page() {
             <div className='flex w-full items-center justify-between'>
                 <div className='w-[48%]'>
                     <label className='text-slate-400' htmlFor="">Name</label><br />
-                    <input type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3' />
+                    <input type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3' />
                 </div>
                 <div className='w-[48%]'>
                     <label className='text-slate-400' htmlFor="">Lastname</label><br />
-                    <input type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3' />
+                    <input type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3' />
                 </div>
                 
             </div>
 
             <div className='mt-2'>
                 <label className='text-slate-400' htmlFor="">E-mail</label><br />
-                <input type="email" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3' />
+                <input type="email" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3' />
             </div>
 
             <div className='mt-3'>
                 <label className='text-slate-400' htmlFor="">Message</label><br />
-                <input type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-2 h-24' />
+                <input type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-2 h-24 md:h-20 lg:h-28' />
             </div>
             
-            <button className='bg-transparent border-2 border-[#FB1F65] mt-6 w-44 mx-auto block py-2 xl:py-3 rounded-3xl text-slate-300 font-bold text-xl' type="submit">
+            <button className='bg-transparent border-2 border-[#FB1F65] mt-6 w-44 mx-auto block py-2 md:py-1 lg:py-2 xl:py-3 rounded-3xl text-slate-300 font-bold text-xl' type="submit">
                 Send
             </button>
             
