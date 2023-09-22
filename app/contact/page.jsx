@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <section className='w-screen h-screen flex flex-col lg:flex-row items-center gap-10 lg:gap-0 pt-24 md:pt-12 lg:pt-0 lg:justify-between'>
+    <section className='w-screen h-screen flex flex-col lg:flex-row items-center gap-10 lg:gap-0 pt-24 md:pt-2 lg:pt-0 lg:justify-between'>
         <img src="https://i.imgur.com/Mw1p9T4.png" className='absolute mix-blend-color-dodge right-0 bottom-0 md:w-7/12 -z-10' alt="explosion" />
         <div className='w-full lg:w-5/12'>
             <h3 className='text-center lg:text-left font-extrabold text-4xl lg:text-5xl 2xl:text-6xl tracking-tighter'>Let's get in <span className='text-[#FB1F65]'>touch.</span></h3>
