@@ -19,7 +19,7 @@ export default function NavBar() {
     const inactive = 'w-[16%] md:w-auto flex justify-center md:w-auto bg-transparent cursor-pointer'
 
   return (
-    <header className='w-full bg-black/50 md:bg-white/10 fixed bottom-0 left-0 px-7 rounded-xl py-4 md:w-20 md:rounded-full md:gap-5 md:top-1/2 md:-translate-y-1/2  md:left-auto md:right-4 md:h-80 lg:h-[520px] md:py-12 z-50'>
+    <header className='w-full bg-black/50 md:bg-white/10 fixed bottom-0 left-0 px-7 rounded-xl py-4 md:w-20 md:rounded-full md:gap-5 md:top-1/2 md:-translate-y-1/2  md:left-auto md:right-1 lg:right-3 md:h-80 lg:h-[520px] md:py-12 z-50'>
         <nav className='flex md:h-full items-center justify-between flex-row md:flex-col h-20 z-50'>
             
             

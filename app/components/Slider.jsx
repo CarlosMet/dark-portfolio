@@ -97,7 +97,7 @@ const Slider = ({section}) => {
         ) )
         : testimonials.map((testimonial, index) =>(
             <SwiperSlide>
-                <div className='w-full bg-white/5 backdrop-blur-sm pt-3 pb-10 lg:pt-8 lg:pb-14 px-7 lg:px-14 rounded-2xl'>
+                <div className='w-11/12 md:w-10/12 lg:w-full mx-auto lg:mx-0 bg-white/5 backdrop-blur-sm pt-3 pb-10 lg:pt-8 lg:pb-14 px-7 lg:px-14 rounded-2xl'>
                     <div className='flex flex-col items-center gap-2 justify-center'>
 
                         <div className='bg-white w-12 h-12 lg:h-14 lg:w-14 rounded-full grid place-items-center overflow-hidden'>
@@ -110,7 +110,7 @@ const Slider = ({section}) => {
                         </div>
 
                     </div>
-                    <p className='mt-4 lg:mt-6 text-lg text-slate-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eaque voluptas iusto impedit voluptatum placeat veritatis dolore quos modi dolorem consequuntur quod consectetur, mollitia esse quas inventore. Atque, expedita.</p>
+                    <p className='mt-4 lg:mt-6 text-slate-400 tracking-tight'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eaque voluptas iusto impedit voluptatum placeat veritatis dolore quos modi dolorem consequuntur quod consectetur, mollitia esse quas inventore. Atque, expedita.</p>
                 </div>
             </SwiperSlide>
         ))
