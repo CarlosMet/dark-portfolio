@@ -16,7 +16,7 @@ export default function Page() {
 
              {/* slider */}
             <div className='w-full md:w-9/12 px-5 mt-16 md:top-0'>
-                  <Slider>                  
+                  <Slider section={'portfolio'}>                  
                   </Slider>
            </div>
 

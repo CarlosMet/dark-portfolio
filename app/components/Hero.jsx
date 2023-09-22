@@ -17,7 +17,7 @@ export default function Hero() {
             <p className='text-lg text-center md:text-left mt-6 lg:mt-9 tracking-tight text-slate-300'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit iste expedita veritatis ad culpa sequi eligendi quis sunt? Officiis nostrum numquam deleniti iusto, illo nesciunt possimus temporibus. Assumenda amet ipsam molestias, facilis natus ratione sapiente placeat?
             </p>
-            <div className='flex flex-col lg:flex-row items-center mt-16 md:mt-6 lg:mt-9 gap-10'>
+            <div className='flex flex-col md:flex-row items-center mt-16 md:mt-6 lg:mt-9 gap-8 lg:gap-10'>
                 
                 <button className='main-btn w-56'>
                     Active
