@@ -10,7 +10,7 @@ export default function Page() {
         <img src="https://i.imgur.com/Mw1p9T4.png" className='absolute mix-blend-color-dodge right-0 bottom-0 md:w-7/12 -z-10' alt="explosion" />
         <div className='flex flex-col md:flex-row w-full items-center justify-between'>
             <div className='w-full md:w-3/12'>
-                <h3 className='text-4xl lg:text-5xl 2xl:text-6xl font-extrabold tracking-tighter text-center md:text-left'>My Work</h3>
+                <h3 className='text-4xl lg:text-5xl 2xl:text-6xl font-extrabold tracking-tighter text-center md:text-left'><span className='text-[#FB1F65]'>My</span> Work.</h3>
                 <p className='text-lg text-slate-400 mt-4 text-center md:text-left'>These are some of my relevant projects</p>
             </div>
 

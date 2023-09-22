@@ -12,9 +12,9 @@ export default function Hero() {
     <section className='hero relative w-screen h-screen overflow-hidden'>
         <div className='w-full md:w-9/12 lg:w-7/12 xl:w-8/12'>
             <h1 className='font-extrabold text-4xl lg:text-6xl xl:text-[66px] 2xl:text-[81px] tracking-tighter text-center md:text-left' style={poppins.style}>
-                Carlos Metaute <br /> <span className='title-span'>Frontend Developer.</span>
+                Carlos <span className='title-span'>Metaute</span> Frontend Developer.
             </h1>
-            <p className='text-lg text-center md:text-left mt-6 lg:mt-9 tracking-tight'>
+            <p className='text-lg text-center md:text-left mt-6 lg:mt-9 tracking-tight text-slate-300'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit iste expedita veritatis ad culpa sequi eligendi quis sunt? Officiis nostrum numquam deleniti iusto, illo nesciunt possimus temporibus. Assumenda amet ipsam molestias, facilis natus ratione sapiente placeat?
             </p>
             <div className='flex flex-col lg:flex-row items-center mt-16 md:mt-6 lg:mt-9 gap-10'>

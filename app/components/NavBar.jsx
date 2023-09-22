@@ -39,7 +39,7 @@ export default function NavBar() {
                 <p className={activeSection === 2 ? 'text-xl md:hidden' : 'hidden'}>Home</p>
             </Link>
 
-            <Link href={'/skills'} onClick={()=> setActive(3)} className={ activeSection === 3 ? active : inactive }>
+            <Link href={'/testimonials'} onClick={()=> setActive(3)} className={ activeSection === 3 ? active : inactive }>
                 <GiStrong size={31}></GiStrong>
                 <p className={activeSection === 3 ? 'text-xl md:hidden' : 'hidden'}>Skills</p>
             </Link>
