@@ -97,7 +97,7 @@ const Slider = ({section}) => {
         ) )
         : testimonials.map((testimonial, index) =>(
             <SwiperSlide>
-                <div className='w-full bg-white/5 pt-3 pb-10 lg:pt-8 lg:pb-14 px-7 lg:px-14 rounded-2xl'>
+                <div className='w-full bg-white/5 backdrop-blur-sm pt-3 pb-10 lg:pt-8 lg:pb-14 px-7 lg:px-14 rounded-2xl'>
                     <div className='flex flex-col items-center gap-2 justify-center'>
 
                         <div className='bg-white w-12 h-12 lg:h-14 lg:w-14 rounded-full grid place-items-center overflow-hidden'>
