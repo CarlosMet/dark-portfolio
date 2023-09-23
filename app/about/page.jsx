@@ -1,10 +1,17 @@
+"use client"
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Page() {
   return (
     <section className='w-screen h-screen relative flex items-center flex-col lg:flex-row lg:justify-center pt-12 md:pt-8 lg:pt-0'>
-        <img src="https://i.imgur.com/Mw1p9T4.png" className='absolute mix-blend-color-dodge right-0 bottom-0 md:w-7/12 -z-10' alt="explosion" />
-        <img className='w-[350px] 2xl:w-[500px] hidden lg:block absolute -z-10 left-0 bottom-0 -translate-x-1/2' src="https://i.imgur.com/OTdKfwe.png" alt="" />
+        <img
+          
+          src="https://i.imgur.com/Mw1p9T4.png" className='absolute mix-blend-color-dodge right-0 bottom-0 md:w-7/12 -z-10' alt="explosion" />
+        <motion.img
+          initial={{x:'-120%', opacity:0}}
+          animate={{x:'-50%', opacity: 1, transition:{duration:1.2, ease:'easeInOut', delay:0.7}}}
+          className='w-[350px] 2xl:w-[500px] hidden lg:block absolute -z-10 left-0 bottom-0' src="https://i.imgur.com/OTdKfwe.png" alt="" />
         <div className='flex flex-col lg:flex-row justify-center gap-6 lg:gap-0 w-full'>
             <div className='w-full lg:w-5/12'>
                 <h3 className='text-4xl lg:text-5xl 2xl:text-6xl font-extrabold tracking-tighter text-center md:text-left items-center lg:items-start'>Let's Bring <span className='text-[#FB1F65]'>
