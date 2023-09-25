@@ -1,10 +1,12 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
+import TransitionEffect from '../components/TransitionEffect'
 
 export default function Page() {
   return (
     <section className='w-screen h-screen relative flex items-center flex-col lg:flex-row lg:justify-center pt-12 md:pt-8 lg:pt-0'>
+        <TransitionEffect />
         <img
           
           src="https://i.imgur.com/Mw1p9T4.png" className='absolute mix-blend-color-dodge right-0 bottom-0 md:w-7/12 -z-10' alt="explosion" />

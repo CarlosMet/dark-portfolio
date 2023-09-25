@@ -3,6 +3,7 @@ import React from 'react'
 import { Poppins } from 'next/font/google'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import TransitionEffect from './TransitionEffect'
 
 const poppins = Poppins({
     weight:['800'],
@@ -14,32 +15,7 @@ export default function Hero() {
   return (
     <section className='hero relative w-screen h-screen overflow-hidden'>
 
-        <motion.div 
-            className='z-50 fixed top-0 right-full h-screen bg-slate-800'
-            initial={{width: '100%', x:'100%'}}
-            animate={{width: 0, x:'0%'}}
-            transition={{duration:1.3, ease:'easeInOut'}}
-            >
-            
-        </motion.div>
-
-        <motion.div 
-            className='z-50 fixed top-0 right-full h-screen bg-slate-600'
-            initial={{width: '100%', x:'100%'}}
-            animate={{width: 0, x:'0%'}}
-            transition={{duration:1.4, delay:0.2}}
-            >
-            
-        </motion.div>
-
-        <motion.div 
-            className='z-50 fixed top-0 right-full h-screen bg-slate-500'
-            initial={{width: '100%', x:'100%'}}
-            animate={{width: 0, x:'0%'}}
-            transition={{duration:1.5, delay:0.4}}
-            >
-            
-        </motion.div>
+        <TransitionEffect />
 
         <motion.div 
             initial={{x:'-65vw'}}
