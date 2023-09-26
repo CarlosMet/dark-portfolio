@@ -4,6 +4,7 @@ import {BiHomeAlt2, BiSolidFolderOpen} from 'react-icons/bi'
 import {RiContactsLine} from 'react-icons/ri'
 import {BsFillSendExclamationFill} from 'react-icons/bs'
 import {GiStrong} from 'react-icons/gi'
+import {BsQuote} from 'react-icons/bs'
 import Link from 'next/link'
 
 
@@ -40,8 +41,8 @@ export default function NavBar() {
             </Link>
 
             <Link href={'/testimonials'} onClick={()=> setActive(3)} className={ activeSection === 3 ? active : inactive }>
-                <GiStrong size={31}></GiStrong>
-                <p className={activeSection === 3 ? 'text-xl md:hidden' : 'hidden'}>Skills</p>
+                <BsQuote size={31}/>
+                <p className={activeSection === 3 ? 'text-xl md:hidden' : 'hidden'}>Quotes</p>
             </Link>
 
             <Link href={'/about'} onClick={()=> setActive(4)} className={ activeSection === 4 ? active : inactive }>

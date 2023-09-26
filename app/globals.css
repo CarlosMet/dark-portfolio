@@ -49,6 +49,44 @@ section{
   animation: btn-border 7s linear infinite;
 }
 
+.about-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55px;
+  height: 60px;
+  filter: grayscale(100%);
+  transition: filter 1.2s;
+
+  &:hover{
+    filter: grayscale(0%);
+  }
+}
+
+.about-icon p{
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.about-icon:hover p{
+  opacity: 1;
+}
+
+.react-icon{
+  &:hover{
+    animation: react-spin 4s infinite linear;
+  }
+}
+
+@keyframes react-spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes btn-border {
   0%{
     background-position: 0 0;

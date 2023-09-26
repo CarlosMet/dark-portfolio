@@ -25,8 +25,8 @@ export default function Hero() {
             <h1 className='font-extrabold text-4xl lg:text-6xl xl:text-[66px] 2xl:text-[81px] tracking-tighter text-center md:text-left' style={poppins.style}>
                 Carlos <span className='title-span'>Metaute</span><br /> Frontend Developer.
             </h1>
-            <p className='text-lg text-center md:text-left mt-6 lg:mt-9 tracking-tight text-slate-300'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit iste expedita veritatis ad culpa sequi eligendi quis sunt? Officiis nostrum numquam deleniti iusto, illo nesciunt possimus temporibus. Assumenda amet ipsam molestias, facilis natus ratione sapiente placeat?
+            <p className='text-lg text-center md:text-left mt-6 lg:mt-9 tracking-tight text-slate-300 w-full lg:w-[91%]'>
+                Hello and thank you for visiting my portfolio! I'm a passionate frontend developer. As a student of software development at UNAD (National University of Distance Education), I'm constantly expanding my skills and staying up-to-date with the latest industry trends.
             </p>
             <div className='flex flex-col md:flex-row items-center mt-16 md:mt-6 lg:mt-9 gap-8 lg:gap-10'>
                 
@@ -37,7 +37,7 @@ export default function Hero() {
                 </button>
 
                 <button className=''>
-                    Download CV
+                    <a href="/files/carlos.pdf" download='/files/carlos.pdf'>Download CV</a>
                 </button>
                 
             </div>

@@ -10,12 +10,21 @@ import 'swiper/css/scrollbar';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 const projects = [{
-    src: '',
+    src: 'https://adelaida.vercel.app/',
     image: 'https://i.imgur.com/K5XhdOZ.png',
     title: 'Uniform Store',    
-    attributes: ['E-commerce'],
+    attributes: ['E-commerce'],  
+    tag: 'Freelance'  
     
 },
+{
+    src: 'https://adelaida.vercel.app/',
+    image: 'https://i.imgur.com/85ElWO0.png',
+    title: 'Adelaida Correa',    
+    attributes: [''],
+    tag:'Working On'
+    
+}
 
 ]  
 
@@ -47,13 +56,21 @@ const Slider = ({section}) => {
         { section === 'portfolio' ?
         projects.map( (project, index) =>(
             <SwiperSlide key={index}>
-                <div className='w-full h-64 md:h-80 overflow-hidden flex flex-col items-center relative bg-gradient-to-r from-[#FB1F65] to-pink-400 rounded-xl'>
-                    <div className="absolute top-0 left-0 w-full h-full bg-black/10 py-4 px-6 flex flex-col justify-end">
+                <div className='w-full h-64 md:h-80 2xl:h-96 overflow-hidden flex flex-col items-center relative bg-gradient-to-r from-[#FB1F65] to-pink-400 rounded-xl group'>
+                    <div className="absolute top-0 left-0 w-full h-full bg-black/30 py-4 px-6 flex flex-col justify-end">
                         <h4 className='font-extrabold text-4xl text-white z-10'>{project.title}</h4> 
                         {project.attributes.map((att, index) => (
-                            <p className='font-semibold tracking-tight' key={index}>{att}</p>
+                            <p className='font-semibold tracking-tight mr-3' key={index}>{att}</p>
                         ))}
                     </div> 
+
+                    <div className="absolute top-1/2 left-1/2 z-50 cursor-pointer font-extrabold tracking-tighter text-2xl lg:opacity-0 lg:group-hover:opacity-100 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-700">
+                            <a className='underline underline-offset-4' href={project.src} target='_blank'>Preview.</a>
+                    </div>
+
+                    <div className='absolute -right-10 w-48 top-10 h-8 rotate-45 bg-gradient-to-r from-green-500 to-green-100 grid place-items-center font-black text-xl text-black'>
+                        <p>{project.tag}</p>
+                    </div>
 
                     <img src={project.image} className='w-full h-full' alt="" />
                     
