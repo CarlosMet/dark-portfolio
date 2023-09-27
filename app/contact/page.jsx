@@ -36,6 +36,10 @@ export default function Page() {
           });
 
           confetti()
+
+          setMailColor('bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3')
+          setNameColor('bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3')
+          setErrorMessage('')
         
       };
 
