@@ -37,7 +37,7 @@ export default function Hero() {
                 </button>
 
                 <button className=''>
-                    <a href="/files/carlos.pdf" download='/files/carlos.pdf'>Download CV</a>
+                    <a href="/files/carlosCV.pdf" download='/files/carlosCV.pdf'>Download CV</a>
                 </button>
                 
             </div>

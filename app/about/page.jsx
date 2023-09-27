@@ -30,8 +30,8 @@ export default function Page() {
 
             <div className='w-full lg:w-5/12 lg:pl-6'>
                 <div className='flex items-center gap-20 md:gap-32 justify-center md:justify-normal'>
-                  <p onClick={()=> setActiveSection('skills')} className='text-2xl text-slate-200 font-semibold underline underline-offset-4 cursor-pointer'>Skills</p>
-                  <p onClick={()=> setActiveSection('info')} className='text-2xl text-slate-400 font-semibold underline underline-offset-4 cursor-pointer'>Info</p>
+                  <p onClick={()=> setActiveSection('skills')} className={activeSection === 'skills' ? 'text-2xl text-slate-200 font-semibold underline underline-offset-4 cursor-pointer' : 'text-2xl text-slate-400 font-semibold underline underline-offset-4 cursor-pointer'}>Skills</p>
+                  <p onClick={()=> setActiveSection('info')} className={activeSection === 'info' ? 'text-2xl text-slate-200 font-semibold underline underline-offset-4 cursor-pointer' : 'text-2xl text-slate-400 font-semibold underline underline-offset-4 cursor-pointer'}>Info</p>
                   
                 </div>
 
