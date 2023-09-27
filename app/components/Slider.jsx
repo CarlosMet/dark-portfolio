@@ -62,7 +62,7 @@ const Slider = ({section}) => {
         { section === 'portfolio' ?
         projects.map( (project, index) =>(
             <SwiperSlide key={index}>
-                <div className='w-full h-64 lg:h-80 2xl:h-96 overflow-hidden flex flex-col items-center relative bg-gradient-to-r from-[#FB1F65] to-pink-400 rounded-xl group'>
+                <div className='w-full h-64 md:h-72 lg:h-80 2xl:h-96 overflow-hidden flex flex-col items-center relative bg-gradient-to-r from-[#FB1F65] to-pink-400 rounded-xl group'>
                     
 
                     <div className="absolute top-1/2 left-1/2 z-50 cursor-pointer font-extrabold tracking-tighter text-2xl lg:opacity-0 lg:group-hover:opacity-100 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-700">
