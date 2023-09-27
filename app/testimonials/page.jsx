@@ -4,7 +4,7 @@ import TransitionEffect from '../components/TransitionEffect'
 
 export default function Page() {
   return (
-    <section className='w-screen h-screen pb-24 lg:pb-0 flex flex-col lg:flex-row items-center pt-6 md:pt-5 gap-10 md:gap-4 lg:gap-0 justify-center lg:pt-0 lg:justify-between relative'>
+    <section className='w-screen h-screen pb-24 lg:pb-0 flex flex-col lg:flex-row items-center pt-6 md:pt-7 gap-10 md:gap-4 lg:gap-0 justify-center lg:pt-0 lg:justify-between relative'>
 
         
         <TransitionEffect />
