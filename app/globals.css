@@ -55,7 +55,7 @@ section{
   align-items: center;
   width: 55px;
   height: 60px;
-  filter: grayscale(100%);
+  filter: grayscale(65%);
   transition: filter 1.2s;
 
   &:hover{

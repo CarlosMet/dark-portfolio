@@ -29,7 +29,7 @@ export default function Page() {
             </div>
 
             <div className='w-full lg:w-5/12 lg:pl-6'>
-                <div className='flex items-center gap-20 md:gap-32'>
+                <div className='flex items-center gap-20 md:gap-32 justify-center md:justify-normal'>
                   <p onClick={()=> setActiveSection('skills')} className='text-2xl text-slate-200 font-semibold underline underline-offset-4 cursor-pointer'>Skills</p>
                   <p onClick={()=> setActiveSection('info')} className='text-2xl text-slate-400 font-semibold underline underline-offset-4 cursor-pointer'>Info</p>
                   
@@ -46,14 +46,14 @@ export default function Page() {
                       </div>     
                       <div className='about-icon'>
                         <img className='w-9' src="/tailwind-svgrepo-com.svg" alt="css icon" />
-                        <p className='text-center text-slate-200'>css</p>
+                        <p className='text-center text-slate-200'>tailwind</p>
                       </div>                
                       <div className='about-icon'>
                         <img className='w-9 react-icon' src="/react-svgrepo-com.svg" alt="react icon" />
                         <p className='text-center text-slate-200'>react</p>
                       </div>
                       <div className='about-icon'>
-                        <img className='w-9' src="/next-js-svgrepo-com.svg" alt="next icon" />
+                        <img className='w-9' src="/next-js-svgrepo-co.svg" alt="next icon" />
                         <p className='text-center text-slate-200'>next js</p>
                       </div>
                       <div className='about-icon'>

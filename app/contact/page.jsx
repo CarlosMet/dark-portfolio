@@ -1,10 +1,14 @@
 "use client"
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import TransitionEffect from '../components/TransitionEffect'
 import emailjs from '@emailjs/browser';
 import confetti from 'canvas-confetti';
 
 export default function Page() {
+
+    const [errorMessage, setErrorMessage] = useState(null)
+    const [nameColor, setNameColor] =useState('bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3')
+    const [mailColor, setMailColor] =useState('bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3')
     const ref = useRef()
 
     const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -14,11 +18,13 @@ export default function Page() {
         e.preventDefault();
         console.log(ref.current.mail.value)
         if(!regexEmail.test(ref.current.mail.value)){  
-            alert('insert a valid mail direction please')          
+            setErrorMessage('insert a valid mail direction please')    
+            setMailColor('bg-white/5 focus:outline-none border border-red-500 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3')      
             return
         }
         if(ref.current.name.value === ''){
-            alert('Insert a valid name please')
+            setErrorMessage('insert a valid name please')
+            setNameColor('bg-white/5 focus:outline-none border border-red-500 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3')
             return
         }
         
@@ -46,7 +52,7 @@ export default function Page() {
             <div className='flex w-full items-center justify-between'>
                 <div className='w-[48%]'>
                     <label className='text-slate-400' htmlFor="">Name</label><br />
-                    <input name='name' type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3' />
+                    <input name='name' type="text" className={nameColor} />
                 </div>
                 <div className='w-[48%]'>
                     <label className='text-slate-400' htmlFor="">Lastname</label><br />
@@ -57,7 +63,7 @@ export default function Page() {
 
             <div className='mt-2'>
                 <label className='text-slate-400' htmlFor="">E-mail</label><br />
-                <input name='mail' type="email" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-3 md:py-1 lg:py-3' />
+                <input name='mail' type="email" className={mailColor} />
             </div>
 
             <div className='mt-3 md:mt-2 lg:mt-3'>
@@ -65,7 +71,14 @@ export default function Page() {
                 <input name='message' type="text" className='bg-white/5 focus:outline-none border border-slate-400 rounded-lg w-full px-2 lg:px-4 py-2 h-24 md:h-[72px] lg:h-28' />
             </div>
             
-            <button className='bg-transparent border-2 border-[#FB1F65] mt-6 md:mt-4 lg:mt-6 w-44 mx-auto block py-2 md:py-1 lg:py-2 xl:py-3 rounded-3xl text-slate-300 font-bold text-xl' type="submit">
+            <div className='h-4'>
+            {
+                errorMessage &&
+                    <p className='text-sm text-red-500 tracking-tight font-semibold'>{errorMessage}</p>
+            }
+            </div>
+
+            <button className='bg-transparent border-2 border-[#FB1F65] mt-4 md:mt-2 lg:mt-6 w-44 mx-auto block py-2 md:py-1 lg:py-2 xl:py-3 rounded-3xl text-slate-300 font-bold text-xl' type="submit">
                 Send
             </button>
             
